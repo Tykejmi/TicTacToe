@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe - Tykejmi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="game">
+        <header>
+          <div class="current-turn"><span class="current-turn-value"></span><span>Turn</span></div>
+          <div class="reset-button">Restart</div>
+        </header>
+        <div class="grid">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="scores">
+          <div class="x-score">
+            <p>X Wins</p>
+            <p data-x-score>0</p>
+          </div>
+          <div class="draws-score">
+            <p>Draws</p>
+            <p data-draws-score>0</p>
+          </div>
+          <div class="o-score">
+            <p>O Wins</p>
+            <p data-o-score>0</p>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <p class="result-text"><span class="result-span-mark"></span> <span class="result-span-text"></span></p>
+        <div class="result-btns">
+          <div class="quit-btn">Quit</div>
+          <div class="res-btn">Next round</div>
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
