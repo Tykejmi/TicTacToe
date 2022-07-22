@@ -7,7 +7,7 @@ This is simple web game of Tic Tac Toe made with Javascript.
 
 ## Features
 - Score counter and reset 
-- Can played both on PC or Mobile layout
+- Can be played both on PC or Mobile layout
 - Win state modal
 
 ## Try it out: 
