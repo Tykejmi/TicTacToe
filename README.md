@@ -22,4 +22,4 @@ https://tykejmi.github.io/TicTacToe/
 - AI
 
 ## Credits
-- This project was made as challange from [Frontendmentor.io](https://www.frontendmentor.io/challenges/tic-tac-toe-game-Re7ZF_E2v).The task was to replicate design and functionality of website from image. 
+- This project was made as challange from [Frontendmentor.io](https://www.frontendmentor.io/challenges/tic-tac-toe-game-Re7ZF_E2v).The task was to replicate design and functionality of website from image.
