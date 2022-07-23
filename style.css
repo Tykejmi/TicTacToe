@@ -14,7 +14,7 @@ body{
     padding: 0;
     height: 100%;
     width: 100%;
-    
+
 }
 
 .wrap{
@@ -24,13 +24,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 }
 .game{
     display: grid;
-    /* grid-template-columns: repeat(3, auto); */
     justify-content: center;
-   
+
 }
 header{
     display: flex;
@@ -62,13 +62,13 @@ header{
 .current-turn span:last-child{
 margin-right: 1rem;
 
-} 
-.current-turn-value{ 
+}
+.current-turn-value{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 1.5rem;
-  
+
 
 }
 .mini-x::after,
@@ -77,7 +77,7 @@ margin-right: 1rem;
     position: absolute;
     width: 20px;
     height: 2.5px;
-    background-color: var(--x-color); 
+    background-color: var(--x-color);
 }
 .mini-x::after{
     transform: rotate(45deg);
@@ -138,7 +138,7 @@ cursor: pointer;
     align-items: center;
     font-weight: 800;
     color: rgb(46, 31, 31);
-   
+
 }
 .scores .x-score{
     background-color: var(--x-color);
@@ -152,7 +152,7 @@ cursor: pointer;
     margin: 0;
     font-weight: 700;
 }
-.scores div p:last-child{  
+.scores div p:last-child{
     font-size: 1.5rem;
 }
 
@@ -162,12 +162,12 @@ cursor: pointer;
     position: absolute;
     width: 80px;
     height: 10px;
-    background-color: var(--x-color);  
+    background-color: var(--x-color);
 }
 .x::before{
 transform: rotate(45deg);
 }
-.x::after{ 
+.x::after{
     transform: rotate(-45deg);
 }
 
@@ -179,7 +179,7 @@ transform: rotate(45deg);
     height: 40px;
     background-color: var(--cell-color);
     border-radius: 50%;
-    
+
 }
 .o::before{
  width: 80px;
@@ -188,6 +188,7 @@ transform: rotate(45deg);
 }
 
  .result{
+   right: 0;
     position: absolute;
     display: none;
     flex-direction: column;
@@ -199,7 +200,7 @@ transform: rotate(45deg);
     color: white;
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 700;  
+    font-weight: 700;
  }
  .result-show{
     display: flex;
@@ -207,7 +208,7 @@ transform: rotate(45deg);
  .result-btns{
     display: flex;
  }
- 
+
  .result-text{
     display: flex;
     justify-content:space-around;
@@ -219,16 +220,16 @@ transform: rotate(45deg);
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
  }
 
-    
+
 .result-x,
 .result-o{
     padding: 0 2rem;
-    
+
 }
- 
+
 
  .result-x::after,
  .result-x::before{
@@ -236,7 +237,7 @@ transform: rotate(45deg);
      position: absolute;
      width: 50px;
      height: 5px;
-     background-color: var(--x-color); 
+     background-color: var(--x-color);
  }
  .result-x::after{
      transform: rotate(45deg);
@@ -253,7 +254,7 @@ transform: rotate(45deg);
      height: 20px;
      background-color: black;
      border-radius: 50%;
-     
+
  }
  .result-o::before{
   width: 40px;
@@ -261,7 +262,7 @@ transform: rotate(45deg);
   background-color: var(--circle-color);
  }
 
- 
+
  .quit-btn,
  .res-btn
  {
@@ -272,7 +273,7 @@ transform: rotate(45deg);
     padding: 1rem;
     margin: 1rem;
     cursor: pointer;
-    box-shadow: rgb(77, 75, 75) 0px -5px 0px inset;;
+    box-shadow: rgb(77, 75, 75) 0px -4px 0px inset;;
  }
  .quit-btn:hover,
  .res-btn:hover{

@@ -1,15 +1,17 @@
-const CELLS = document.querySelectorAll(".cell");
-const RES_BTN = document.querySelector(".reset-button");
-const RESULT = document.querySelector(".result");
-const RESULT_TEXT = document.querySelector(".result-text");
-const resultRes = document.querySelector(".res-btn");
-const xCounter = document.querySelector("[data-x-score]");
-const oCounter = document.querySelector("[data-o-score]");
-const drawCounter = document.querySelector("[data-draws-score]");
-const QUIT_BTN = document.querySelector(".quit-btn");
+const CELLS = document.querySelectorAll("[cell]");
+const RES_BTN = document.querySelector("[main-reset-button]");
+const RESULT = document.querySelector("[result]");
+const RESULT_TEXT = document.querySelector("[result-text]");
+const RESULT_RES_BTN = document.querySelector("[result-reset-btn]");
+const X_COUNTER = document.querySelector("[x-score]");
+const O_COUNTER = document.querySelector("[o-score]");
+const DRAW_COUNTER = document.querySelector("[draws-score]");
+const QUIT_BTN = document.querySelector("[quit-btn]");
+
 const CURREN_TURN_DISPLAY = document.querySelector(".current-turn-value");
 const RESULT_SPAN = document.querySelector(".result-span-mark");
-const RESULT_SPAN_TEXT = document.querySelector(".result-span-text");
+
+const RESULT_SPAN_TEXT = document.querySelector("[result-span-text]");
 
 let winCombos = [
   [0, 1, 2],
@@ -110,9 +112,9 @@ function gameEnd(currentTurn) {
 }
 
 function displayUpdate() {
-  drawCounter.innerText = drawCount;
-  oCounter.innerText = oCount;
-  xCounter.innerText = xCount;
+  DRAW_COUNTER.innerText = drawCount;
+  O_COUNTER.innerText = oCount;
+  X_COUNTER.innerText = xCount;
 }
 
 RES_BTN.addEventListener("click", startGame);
