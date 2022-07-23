@@ -7,13 +7,11 @@ const X_COUNTER = document.querySelector("[x-score]");
 const O_COUNTER = document.querySelector("[o-score]");
 const DRAW_COUNTER = document.querySelector("[draws-score]");
 const QUIT_BTN = document.querySelector("[quit-btn]");
-
 const CURREN_TURN_DISPLAY = document.querySelector(".current-turn-value");
 const RESULT_SPAN = document.querySelector(".result-span-mark");
-
 const RESULT_SPAN_TEXT = document.querySelector("[result-span-text]");
 
-let winCombos = [
+let WIN_COMBOS = [
   [0, 1, 2],
   [3, 4, 5],
   [6, 7, 8],
@@ -73,7 +71,7 @@ function turnSwapDisplay(currentTurn) {
 }
 
 function checkWin(currentTurn) {
-  return winCombos.some((combo) => {
+  return WIN_COMBOS.some((combo) => {
     return combo.every((i) => {
       return CELLS[i].classList.contains(currentTurn);
     });
