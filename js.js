@@ -7,8 +7,8 @@ const X_COUNTER = document.querySelector("[x-score]");
 const O_COUNTER = document.querySelector("[o-score]");
 const DRAW_COUNTER = document.querySelector("[draws-score]");
 const QUIT_BTN = document.querySelector("[quit-btn]");
-const CURREN_TURN_DISPLAY = document.querySelector(".current-turn-value");
-const RESULT_SPAN = document.querySelector(".result-span-mark");
+const CURREN_TURN_DISPLAY = document.querySelector("[current-turn-value]");
+const RESULT_SPAN = document.querySelector("[result-span-mark]");
 const RESULT_SPAN_TEXT = document.querySelector("[result-span-text]");
 
 const WIN_COMBOS = [
