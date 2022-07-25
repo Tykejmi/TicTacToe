@@ -280,3 +280,14 @@ transform: rotate(45deg);
     color:gray;
     background-color: white;
 }
+
+@media only screen and (max-width: 400px) {
+
+    .quit-btn,
+    .res-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
