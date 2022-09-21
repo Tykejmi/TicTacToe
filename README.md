@@ -11,7 +11,7 @@ This is simple web game of Tic Tac Toe made with Javascript.
 - Win state modal
 
 ## Try it out: 
-https://tykejmi.github.io/TicTacToe/
+https://tykejmi-tictactoe.netlify.app
 
 ## Technologies used:
 - HTML5
